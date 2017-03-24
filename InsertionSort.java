@@ -1,7 +1,3 @@
-import java.util.Random;
-import java.util.Arrays;
-import javafx.application.Application;
-
 public class InsertionSort implements Sorter {
 	private int[] list;
 
@@ -49,16 +45,5 @@ public class InsertionSort implements Sorter {
 
 	public int[] getList() {
 		return list;
-	}
-
-	public static void main(String[] args) {
-		int[] l = Main.getList();
-
-		InsertionSort s = new InsertionSort();
-		s.setList(l);
-
-		Main.setSorter(s);
-
-		Application.launch(Window.class, args);
 	}
 }

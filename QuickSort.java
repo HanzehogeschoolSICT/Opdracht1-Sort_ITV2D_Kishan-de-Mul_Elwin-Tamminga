@@ -1,5 +1,4 @@
 import java.util.Stack;
-import javafx.application.Application;
 
 public class QuickSort implements Sorter {
 	private int[] list;
@@ -47,10 +46,6 @@ public class QuickSort implements Sorter {
 				rightRangesStart.push(index + 1);
 				rightRangesEnd.push(endRange);
 			}
-			System.out.println("Range: " + startRange + " t/m " + endRange);
-			System.out.println("Pivot value: " + pivot);
-			System.out.println("Pivot new index: " + index);
-			System.out.println("Stack size: " + rightRangesStart.size());
 			return false;
 		}
 
@@ -77,16 +72,5 @@ public class QuickSort implements Sorter {
 
 	public int[] getList() {
 		return list;
-	}
-
-	public static void main(String[] args) {
-		int[] l = Main.getList();
-
-		QuickSort s = new QuickSort();
-		s.setList(l);
-
-		Main.setSorter(s);
-
-		Application.launch(Window.class, args);
 	}
 }

@@ -14,8 +14,6 @@ import javafx.concurrent.Task;
 import javafx.concurrent.Service;
 import javafx.application.Platform;
 
-import java.util.Arrays;
-
 public class Window extends Application {
 	Sorter main;
 	BarChart chart;
